@@ -1,0 +1,46 @@
+/* ======================
+   CODE MIRROR EDITOR
+====================== */
+
+.codemirror {
+  min-height: calc(100vh - 20px);
+  font-size: 16px;
+  line-height: 1.6;
+  padding-top: 20px;
+  background: #020617;
+}
+
+/* ======================
+   COMPILER WINDOW
+====================== */
+
+.compile-window {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 40%;
+  background-color: #020617;
+  box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.slide-up {
+  transform: translateY(0);
+}
+
+.slide-down {
+  transform: translateY(100%);
+}
+
+.output-box {
+  height: 150px;
+  background-color: #020617;
+  padding: 12px;
+  overflow-y: auto;
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+  border-radius: 6px;
+}
